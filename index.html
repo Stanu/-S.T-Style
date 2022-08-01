@@ -1,73 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Webpage Design</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Roboto:ital,wght@1,100;1,500&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Movie Design</title>
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">S.T.Style</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SERVICE</a></li>
-                    <li><a href="">DESIGN</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">Stantu</h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
                 </ul>
             </div>
-            <div class="search">
-                <input class="srch" type="Search" name="" placeholder="Type to text">
-                <a href=""> <button class="btn">Search</button></a>
-
-            </div>
-        </div>
-        <div class="content">
-            <h1>Web Design & <br><span>Development</span><br> Coding Lover</h1>
-            <br>
-            <p>I am Subhabrata, from India. We are the developer always with our clients.<br>
-            <br> Any Time, Any Where, Any Situation <br>
-            <br> We are ready to solve your problem.</p>
-            <br>
-
-            <button class="cn"><a href="#">JOIN US</a></button>
-            <div class="form">
-                <h2>Login Here</h2>
-                <input type="email" name="email" placeholder="Enter Email Here">
-                <input type="password" name="" placeholder="Enter Password Here">
-                <button class="btnn"><a href="#">Login</a></button>
-
-                <p class="link">Don't have an account<br>
-                <a href="#">Sign Up Here</a></p>
-                <p class="liw">Login with</p>
-                <div class="icon">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/subhabrata.png" alt="">
+                <div class="profile-text-containe">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
                 </div>
             </div>
-            
         </div>
     </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script>
-        prompt("Welcome to Pani's Creative World", "Always keep smiling")
-   </script>
-   <br>
-    <hr>
-<a href="hobbies.html">My Hobbies</a>
-<a href="contact-me.html">Contact Me</a>
-<br>
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://panidaorg.wordpress.com/">Website</a>
-    <p>© 2021 S.T. Style. @ We are Developer.</p>
-  </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon fa-solid fa-house-chimney"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping-fast"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/11.jpg');">
+               <img class="featured-title" src="img/logo2.png" alt="">
+               <p class="featured-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi perspiciatis,
+                 ullam magnam sed laudantium, reiciendis dolorem omnis ex, vel saepe eaque placeat sequi alias quasi 
+                 impedit assumenda accusantium fuga excepturi. Unde incidunt amet explicabo!</p>
+                  <button class="featured-button">WATCH</button>
+            </div>
+                <div class="movie-list-container">
+                    <h1 class="movie-list-title">NEW RELEASES</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/2.webp" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/5.webp" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/2.webp" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+                <div class="movie-list-container">
+                    <h1 class="movie-list-title">NEW RELEASES</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/6.webp" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/8.webp" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/9.jpg" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/2.webp" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/5.webp" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+                <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/11.jpg');">
+               <img class="featured-title" src="img/logo2.png" alt="">
+               <p class="featured-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi perspiciatis,
+                 ullam magnam sed laudantium, reiciendis dolorem omnis ex, vel saepe eaque placeat sequi alias quasi 
+                 impedit assumenda accusantium fuga excepturi. Unde incidunt amet explicabo!</p>
+                  <button class="featured-button">WATCH</button>
+            </div>
+                <div class="movie-list-container">
+                    <h1 class="movie-list-title">NEW RELEASES</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/10.jpg" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/11.jpg" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/2.png" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/2.webp" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                                <span class="movie-list-item-title">S.B.P</span>
+                                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Doloremque nobis, natus omnis quasi reiciendis ratione illo odio error.</p>
+                                <button class="movie-list-item-button">Watch</button>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
